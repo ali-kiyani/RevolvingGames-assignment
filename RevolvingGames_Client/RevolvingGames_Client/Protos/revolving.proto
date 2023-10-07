@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "RevolvingGamesClient";
+
+package Revolving;
+
+service RevolvingService {
+    rpc CheckPrimeNmber (stream PrimeNumber) returns (stream PrimeNumberResp);
+}
+
+message PrimeNumber {
+    int64 id = 1;
+    int64 timestamp = 2;
+    int64 number = 3;
+}
+
+message PrimeNumberResp {
+    int64 id = 1;
+    bool isPrime = 2;
+    int64 number = 3;
+}
