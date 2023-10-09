@@ -1,7 +1,27 @@
 # Revolving Games assignment
 
 This assignment involves setting up a gRPC communication system where clients send requests with random numbers, the server checks if these numbers are prime, and both sides monitor various aspects of the communication, including response verification and RTT measurement. The server also keeps track of prime numbers and displays statistics. Finally, there's a bonus part involving writing a Makefile for building and testing the system.
-
+# Table of Contents
+- [Revolving Games Assignment](#revolving-games-assignment)
+- [gRPC Server](#grpc-server)
+  - [Message Reception](#message-reception)
+  - [Request Handling](#request-handling)
+  - [Prime Number Verification](#prime-number-verification)
+  - [Response Generation](#response-generation)
+  - [Response Sending](#response-sending)
+  - [Statistics Tracking](#statistics-tracking)
+  - [Top Prime Numbers Display](#top-prime-numbers-display)
+  - [Total Messages Count](#total-messages-count)
+  - [Concurrent Handling](#concurrent-handling)
+  - [Synchronization](#synchronization)
+  - [Logging](#logging)
+  - [Makefile Support](#makefile-support)
+- [gRPC Client](#grpc-client)
+  - [Sending a gRPC Request](#sending-a-grpc-request)
+  - [Response Handling](#response-handling)
+  - [Round Trip Time (RTT) Measurement](#round-trip-time-rtt-measurement)
+  - [Logging and Monitoring](#logging-and-monitoring)
+- [How to Run](#how-to-run)
 # gRPC Server
 Following are the key functions and responsibilities of the server in the described gRPC system:
 
